@@ -9,5 +9,5 @@
  */
 angular.module('forecastApp')
   .service('cityService', function () {
-    this.city = 'New York, NY';
+    this.city = 'Toronto, ON';
   });
