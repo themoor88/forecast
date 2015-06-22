@@ -1,4 +1,8 @@
-# forecast
+# Weather Forecast
+
+This project is a SPA built in Angular with the [Open Weather Map API](http://openweathermap.org/forecast). You can find the 2, 5 and 7 day forecast in Fahrenheit for any city.
+
+Enjoy!
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.11.1.
