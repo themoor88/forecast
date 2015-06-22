@@ -8,11 +8,10 @@
  * Controller of the forecastApp
  */
 angular.module('forecastApp')
-  .controller('ForecastCtrl', function($scope, $resource, $routeParams, cityService) {
+  .controller('ForecastCtrl', function($scope, $routeParams, weatherService, cityService) {
     $scope.city = cityService.city;
     $scope.days = $routeParams.days || '2';
-    $scope.weatherAPI = $resource('http://api.openweathermap.org/data/2.5/forecast/daily', {callback: 'JSON_CALLBACK'}, {get: {method:'JSONP'} });
-    $scope.weatherResult = $scope.weatherAPI.get({q: $scope.city, cnt: $scope.days});
+    $scope.weatherResult = weatherService.GetWeather($scope.city, $scope.days);
     $scope.convertToFahrenheit = function(degK) {
       return Math.round((1.8 * (degK - 273)) + 32);
     };
