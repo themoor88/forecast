@@ -15,9 +15,13 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/forecast', {
+        templateUrl: 'views/forecast.html',
+        controller: 'ForecastCtrl'
+      })
+      .when('/home', {
+        templateUrl: 'views/home.html',
+        controller: 'HomeCtrl'
       })
       .otherwise({
         redirectTo: '/'

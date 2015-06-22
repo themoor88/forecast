@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name forecastApp.controller:MainCtrl
+ * @name forecastApp.controller:HomeCtrl
  * @description
- * # MainCtrl
+ * # HomeCtrl
  * Controller of the forecastApp
  */
 angular.module('forecastApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('HomeCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
