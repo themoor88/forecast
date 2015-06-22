@@ -8,10 +8,10 @@
  * Controller of the forecastApp
  */
 angular.module('forecastApp')
-  .controller('HomeCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('HomeCtrl', function($scope, cityService) {
+    $scope.city = cityService.city;
+    $scope.$watch('city', function(){
+      cityService.city = $scope.city;
+    });
+    // This watcher allows for us to make data available from other views.
   });
