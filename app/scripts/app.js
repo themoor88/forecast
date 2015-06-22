@@ -19,6 +19,10 @@ angular
         templateUrl: 'views/forecast.html',
         controller: 'ForecastCtrl'
       })
+      .when('/forecast/:days', {
+        templateUrl: 'views/forecast.html',
+        controller: 'ForecastCtrl'
+      })
       .when('/home', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl'

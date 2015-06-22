@@ -15,3 +15,4 @@ angular.module('forecastApp')
     });
     // This watcher allows for us to make data available from other views.
   });
+
